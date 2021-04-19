@@ -3,28 +3,23 @@
 function readInput() {
     var input = document.getElementById("userInput").value;
     var answer = document.body;
+    var modalCorrect = document.getElementById("modalCorrect");
+    var modalIncorrect = document.getElementById("modalIncorrect");
     
-    console.log(document.body.className);
     if (input != 4) {
-
-        if (document.body.className == "default correct") {
-            answer.classList.toggle("correct");
-        }
-        
-        if (document.body.className != "default incorrect"){
-            answer.classList.toggle("incorrect");
-        }
-        alert("Incorrect!");
+        modalIncorrect.style.display = "block";
     } else {
+        modalCorrect.style.display = "block";
+    }
 
-        if (document.body.className == "default incorrect") {
-            answer.classList.toggle("incorrect");
-        }
+}
 
-        if (document.body.className != "default correct") {
-            answer.classList.toggle("correct");
-        }
-        alert("Correct!");
+window.onclick = function(event) {
+
+    if (event.target == modalIncorrect) {
+        modalIncorrect.style.display = "none";
+    } else if (event.target == modalCorrect) {
+        modalCorrect.style.display = "none";
     }
 
 }

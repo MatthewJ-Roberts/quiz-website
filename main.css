@@ -1,6 +1,6 @@
 :root {
-    --red: #FF0000;
-    --green: #00FF00;
+    --red: rgba(255, 0, 0, 0.3);
+    --green: rgba(0, 255, 0, 0.3);
     --white: #ffffff;
     --black: #000000;
     --font: helvetica;
@@ -50,10 +50,39 @@
     background: var(--black);
 }
 
-.incorrect {
-    background: var(--red);
+#modalCorrect {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: var(--green);
 }
 
-.correct {
-    background: var(--green);
+#modalIncorrect {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: var(--red);
+}
+
+
+.displayModal {
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
 }
