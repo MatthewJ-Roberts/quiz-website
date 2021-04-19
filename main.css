@@ -1,5 +1,6 @@
 :root {
-    --purple: #490499;
+    --red: #FF0000;
+    --green: #00FF00;
     --white: #ffffff;
     --black: #000000;
     --font: helvetica;
@@ -7,7 +8,6 @@
 
 * {
     color: var(--white);
-    background: var(--black);
     font-family: var(--font);
 }
 
@@ -44,4 +44,16 @@
     height: 50px;
     width: 50px;
     border-radius: 50%;
+}
+
+.default {
+    background: var(--black);
+}
+
+.incorrect {
+    background: var(--red);
+}
+
+.correct {
+    background: var(--green);
 }
