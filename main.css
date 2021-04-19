@@ -1,0 +1,47 @@
+:root {
+    --purple: #490499;
+    --white: #ffffff;
+    --black: #000000;
+    --font: helvetica;
+}
+
+* {
+    color: var(--white);
+    background: var(--black);
+    font-family: var(--font);
+}
+
+#flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.item1, .item2, .item3 {
+    width: 500px;
+    margin: 5px;
+    text-align: center;
+}
+
+.item1 {
+    font-size: 50px;
+    width: 100%;
+}
+
+#userInput {
+    background: var(--white);
+    border: none;
+    height: 25px;
+    color: var(--black);
+}
+
+#submitButton {
+    background: var(--white);
+    color: var(--black);
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
