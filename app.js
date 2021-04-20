@@ -34,6 +34,7 @@ function question3() {
     } else {
         modalCorrect.style.display = "block";
     }
+    
 }
 
 function nextQuestion() {
