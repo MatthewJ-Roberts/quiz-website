@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 1</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="flex-container">
+        <div class="questionForm">
+            <form id="form" onsubmit="return false;">
+                <label for="question">What does 2 + 2 equal?</label><br><br>
+                <input type="text" id="userInput"><br><br>
+                <input type="submit" onclick="question1()" id="allButtons" value="Submit">
+            </form>
+        </div>
+    </div>
+    <div id="modalCorrect">
+        <div class="displayModal">
+            <p>Correct!</p>
+            <a href="question2.html"><button id="allButtons" onclick="nextQuestion()">Next</button></a>
+        </div>
+    </div>
+    <div id="modalIncorrect">
+        <div class="displayModal">
+            <p>Incorrect!</p>
+            <a href="question2.html"><button id="allButtons" onclick="nextQuestion()">Next</button></a>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <noscript>You need to enable Javascript to view the full site.</noscript>
+</body>
+</html>

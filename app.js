@@ -1,10 +1,9 @@
 'use strict'
+var modalCorrect = document.getElementById("modalCorrect");
+var modalIncorrect = document.getElementById("modalIncorrect");
 
-function readInput() {
+function question1() {
     var input = document.getElementById("userInput").value;
-    var answer = document.body;
-    var modalCorrect = document.getElementById("modalCorrect");
-    var modalIncorrect = document.getElementById("modalIncorrect");
     
     if (input != 4) {
         modalIncorrect.style.display = "block";
@@ -14,12 +13,30 @@ function readInput() {
 
 }
 
-window.onclick = function(event) {
+function question2() {
+    var input = document.getElementById("userInput").value;
+    input = input.toLowerCase();
 
-    if (event.target == modalIncorrect) {
-        modalIncorrect.style.display = "none";
-    } else if (event.target == modalCorrect) {
-        modalCorrect.style.display = "none";
+    if (input != "dominion day") {
+        modalIncorrect.style.display = "block";
+    } else {
+        modalCorrect.style.display = "block";
     }
 
+}
+
+function question3() {
+    var input = document.getElementById("userInput").value;
+    input = input.toLowerCase();
+
+    if (input != "yes") {
+        modalIncorrect.style.display = "block";
+    } else {
+        modalCorrect.style.display = "block";
+    }
+}
+
+function nextQuestion() {
+    modalIncorrect.style.display = "none";
+    modalCorrect.style.display = "none";
 }
