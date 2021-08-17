@@ -20,13 +20,13 @@
     height: 100vh;
 }
 
-.item1, .item2, .questionForm {
+#item1, #item2, #questionForm {
     width: 600px;
     margin: 5px;
     text-align: center;
 }
 
-.item1 {
+#item1 {
     font-size: 50px;
     width: 100%;
 }
@@ -67,7 +67,7 @@
     background-color: var(--red);
 }
 
-.displayModal {
+#displayModal {
     background-color: var(--black);
     color: var(--white);
     text-align: center;

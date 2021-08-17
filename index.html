@@ -7,14 +7,26 @@
 </head>
 <body>
     <div id="flex-container">
-        <div class="item1">
+        <div id="item1">
             <h1>Welcome to my Quiz!</h1>
         </div>
-        <div class="item2">
+        <div id="item2">
             <p>This website was made to expand my Javascript and web development knowledge.</p>
         </div>
-        <div class="item3">
-            <a href="question1.html"><button id="allButtons">Start</button></a>
+        <div id="item3">
+            <button onclick="startQuiz()" id="allButtons">Start</button></a>
+        </div>
+    </div>
+    <div id="modalCorrect">
+        <div id="displayModal">
+            <p>Correct!</p>
+            <button id="allButtons" onclick="nextQuestion()">Next</button></a>
+        </div>
+    </div>
+    <div id="modalIncorrect">
+        <div id="displayModal">
+            <p>Incorrect!</p>
+            <button id="allButtons" onclick="nextQuestion()">Next</button></a>
         </div>
     </div>
     <script src="app.js"></script>
