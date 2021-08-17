@@ -26,14 +26,14 @@ function nextQuestion() {
         modalCorrect.style.display = "none";
 
         document.getElementById("flex-container").innerHTML = `
-            <div class="item1">
+            <div id="item1">
                 <h1>Thank you for completing my quiz!</h1>
                 <h1>Final Score:</h1><p id="output"></p>
             </div>
-            <div class="item2">
+            <div id="item2">
                 <p>Press 'Retry' to play again</p><br>
             </div>
-            <div class="item3">
+            <div id="item3">
                 <button onclick="startQuiz()" id="allButtons">Retry</button></a>
             </div>
         `;
@@ -57,8 +57,8 @@ function checkAnswer() {
 
 function startQuiz() {
     document.getElementById("flex-container").innerHTML = `
-        <div class="questionForm">
-            <form class="form" onsubmit="return false;">
+        <div id="questionForm">
+            <form id="form" onsubmit="return false;">
                 <label for="question">What does 2 + 2 equal?</label><br><br>
                 <input type="text" id="userInput"><br><br>
                 <input type="submit" onclick="checkAnswer()" id="allButtons" value="Submit">
